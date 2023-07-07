@@ -1,16 +1,20 @@
-# This is a sample Python script.
+from get_data import get_data
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+from tests.abv_test import abv_test
+from tests.name_test import name_test
+from tests.image_url_test import image_url_test
+from tests.ibu_test import ibu_test
+from tests.utils import check_if_value_higher_or_equal
 
 
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_hi('PyCharm')
+    json_data = get_data()
+    passed, failed = abv_test(json_data)
+    passed,failed = name_test(json_data)
+    passed, failed = image_url_test(json_data)
+    passed, failed = ibu_test(json_data)
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+
+
+
+
