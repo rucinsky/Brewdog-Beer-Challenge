@@ -1,0 +1,24 @@
+INFO:abv-test:Starting ABV test
+WARNING:abv-test:Beer 172: abv value is not a float, it's <class 'int'>
+WARNING:abv-test:Beer 216: abv value is not a float, it's <class 'int'>
+WARNING:abv-test:Beer 221: abv value is lower than 4.0
+WARNING:abv-test:Beer 225: abv value is not a float, it's <class 'int'>
+INFO:abv-test:Finished ABV test
+INFO:abv-test:Tested: 23
+INFO:abv-test:Passed: 19
+INFO:abv-test:Failed: 4
+INFO:name-test:Starting Name test
+INFO:name-test:Finished Name test
+INFO:name-test:Tested: 23
+INFO:name-test:Passed: 23
+INFO:name-test:Failed: 0
+INFO:image-url-test:Starting Image URL test
+INFO:image-url-test:Finished Name test
+INFO:image-url-test:Tested: 23
+INFO:image-url-test:Passed: 23
+INFO:image-url-test:Failed: 0
+INFO:ibu-test:Starting IBU test
+INFO:ibu-test:Finished ABV test
+INFO:ibu-test:Tested: 23
+INFO:ibu-test:Passed: 23
+INFO:ibu-test:Failed: 0
