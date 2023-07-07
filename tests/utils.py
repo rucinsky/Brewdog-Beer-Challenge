@@ -1,6 +1,5 @@
 import requests
 
-
 def check_if_value_is_float(value)->bool:
     return isinstance(value,float)
 
